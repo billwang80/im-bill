@@ -2,14 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <link rel="apple-touch-icon" href="logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,11 +21,83 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Bill Wang</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    
+    <header id="home">
+        <div id="header">
+            <!-- react component -->
+            <nav id="navigation"></nav>
+            <div id="page_title">
+                <h2>Hi, I'm Bill!</h2>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <article>
+            <div id="about">
+                <div id="about_title">About Me</div>
+                <div class="row">
+                    <div class="about_image"></div>
+                    <p class="about_description">
+                        I'm currently studying Mechatronics Engineering at the University of Waterloo.
+                        <br><br>I've worked on various projects different places such as Rate Alerts at XE.com and Syngli's learning platform.
+                        <br><br>I like taking long walks on the beach and going on romantic (or professional) picnics.
+                    </p>
+                </div>
+            </div>
+            <div id="projects_section" class="sectioning">
+                <div id="project_title">Projects</div>
+                <!-- react component -->
+                <div id="projects"></div>
+                    <!-- <div class="project_image" style="background-image:url(images/education_game.png)"></div>
+                    <div class="project_description">
+                        <h4 class="project_title">Hour of Code</h4>
+                        <p class="description_p">Cute animated sprites designed for a puzzle game that teaches students how to code. The hero teaches basic concepts such as functions and iteration. Used by over 1000 students during hour of code.</p> 
+                    </div> -->
+                <!-- MAKE PROJECTS IN CARDS THAT ROLL OUT -->
+            </div>
+            <div id="contact" class="sectioning">
+                <h2 class="contact_title">Get in Touch</h2>
+                <div class="contact_container">
+                    <ul class="contact_list">
+                        <li>
+                            <a class="contact_email" href="mailto:bill.wang@edu.uwaterloo.ca" target="_blank">
+                                <div class="contact_icon_email"></div>
+                                Email
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact_resume" href="bill_wang_resume.pdf" target="_blank">
+                                <div class="contact_icon_resume"></div>
+                                Resume
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact_linkedin" href="https://www.linkedin.com/in/bilwang/" target="_blank">
+                                <div class="contact_icon_linkedin"></div>
+                                LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact_github" href="https://github.com/billwang80" target="_blank">
+                                <div class="contact_icon_github"></div>
+                                Github
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_container">
+                    <div class="footer_text">Bill Wang 2020</div>
+                </div>
+            </div>
+        </article>
+    </main>
+  </body>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +108,4 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
 </html>

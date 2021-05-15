@@ -1,0 +1,464 @@
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+main {
+  color: #777;
+}
+
+main h1 {
+  color: #111;
+  text-align: center;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* this is for projects title */
+.section_title {
+  color: #111;
+  text-align: center;
+  font-size: 2em;
+  margin: 196px 128px 96px 128px;
+}
+
+.text_section {
+  padding: 20px;
+  color: #777;
+}
+
+#header{
+  background: url(images/header_colour.JPG);
+  height: 100vh;
+  /*height: 600px;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* parallax effect */
+  background-attachment: fixed;
+  top: 0;
+}
+
+.header_title{
+  max-width: 1000px;
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+  position: relative;
+  top: 36vh;
+  font-size: 2em;
+}
+
+.navbar {
+  margin: 0;
+  width: 100%;
+  overflow: auto;
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  height: auto;
+}
+
+.navbar ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 100px;
+  margin-right: 100px;
+  /* padding: 18px; */
+  padding: 14px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.navbar ul li {
+  margin: 0;
+  flex: 0 1 auto;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.navbar ul li a {
+  margin-top: 0;
+  /* color: white; */
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.vertical_space{
+  margin: 40px;
+}
+
+.large_margin{
+  margin: 180px;
+}
+
+.center{
+  text-align: center;
+}
+
+.sectioning {
+  display: flex;
+  flex-direction: column;
+}
+
+.project_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.project{
+  display: flex;
+  height: 378px;
+  width: 540px;
+  margin-left: 128px;
+  margin-right: 128px;
+  margin-bottom: 128px;
+  border-radius: 10px;
+  box-shadow: 0px 16px 32px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 16px 32px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 16px 32px 3px rgba(0, 0, 0, 0.2);
+}
+
+.project_image{
+  position: absolute;
+  float: left;
+  height: 378px;
+  width: 540px;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.project_description{
+  align-content: flex-start;
+  text-align: left;
+  width: calc(50vw - 64px);
+  max-width: 500px;
+  margin-top: 294px;
+}
+
+.project_title{
+  color: #111;
+  font-size: 1.8em;
+  margin: 10vh 10vw 2vh 10vw;
+  letter-spacing: 2px;
+}
+
+.project_tools{
+  color: darkgrey;
+  margin: 0vh 10vw 3vh 10vw;
+  font-size: 0.9em;
+  word-spacing: 1vw;
+}
+
+.description_p{
+  margin: 2vh 10vw;
+  display: block;
+  font-size: 1.1em;
+  text-align: justify;
+  text-justify: auto;
+}
+
+#about{
+  /* background: url(images/watercolor2.jpg); */
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /* background-color: rgb(182, 182, 182); */
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+  margin-top: 64px;
+  /* margin-bottom: 16px; */
+}
+
+.section_title_about {
+  /* color: white; */
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 8px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.about_image{
+  height: 40vh;
+  width: 32vh;
+  margin: 0 16px 0 25vw;
+  background-size: cover;
+  background-position: bottom;
+  background-image: url(images/placeholder1.jpg);
+}
+
+.about_description{
+  position: relative;
+  width: calc(50vw - 16px);
+  padding: 8px 32px 32px 64px;
+  max-width: 420px;
+  font-size: 1em
+}
+
+#contact {
+  background: url(images/header_colour.JPG);
+  height: 100vh;
+  /*height: 600px;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* parallax effect */
+  background-attachment: fixed;
+  bottom: 0;
+  /* background-image: linear-gradient(to bottom right, #bae8f7, #9a5dcf) */
+}
+
+.contact_title {
+  color: rgba(255, 255, 255, 0.897);
+  text-align: center;
+  font-size: 3em;
+  margin-top: 25vh;
+}
+
+.contact_container {
+  margin: 0;
+  margin-top: 12vh;
+  width: 100%;
+  /* overflow: auto; */
+  z-index: 5;
+  bottom: 0;
+  text-align: center;
+}
+
+.contact_list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  padding: 18px;
+  padding-bottom: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.contact_list li {
+  margin: 0;
+  flex: 0 1 auto;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.contact_list li a {
+  margin-top: 0;
+  color: rgba(255, 255, 255, 0.897); 
+  font-size: 1.5em;
+  text-decoration: none;
+  /* font-weight: bold; */
+}
+
+.contact_resume:hover .contact_icon_resume {
+  width:48px;
+  height:48px;
+  border:0;
+  margin:0 auto;
+  display:block;
+  background: url("images/resume_icon_hover.png");
+  background-size: cover;
+}
+
+.contact_resume:hover {
+  color: black;
+}
+
+.contact_icon_resume {
+  width:48px;
+  height:48px;
+  border:0;
+  margin:0 auto;
+  display:block;
+  background: url("images/resume_icon.png");
+  background-size: cover;
+}
+
+.contact_email:hover .contact_icon_email {
+  width:48px;
+  height:48px;
+  border:0;
+  margin:0 auto;
+  display:block;
+  background: url("images/email_icon_hover.png");
+  background-size: 48px, 48px;
+}
+
+.contact_email:hover {
+  color: black;
+}
+
+.contact_icon_email {
+  width:48px;
+  height:33px;
+  border:0;
+  margin:0 auto;
+  margin-top: 15px;
+  display:block;
+  background: url("images/email_icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact_linkedin:hover .contact_icon_linkedin {
+  width:48px;
+  height:48px;
+  border:0;
+  margin:0 auto;
+  display:block;
+  background: url("images/linkedin_icon_hover.png");
+  background-size: cover;
+}
+
+.contact_linkedin:hover {
+  color: black;
+}
+
+.contact_icon_linkedin {
+  width:48px;
+  height:48px;
+  border:0;
+  margin:0 auto;
+  display:block;
+  background: url("images/linkedin_icon.png");
+  background-size: cover;
+}
+
+.contact_github:hover .contact_icon_github {
+  width:48px;
+  height:48px;
+  border:0;
+  margin:0 auto;
+  display:block;
+  background: url("images/github_icon_hover.png");
+  background-size: cover;
+}
+
+.contact_github:hover {
+  color: black;
+}
+
+.contact_icon_github {
+  width:48px;
+  height:48px;
+  border:0;
+  margin:0 auto;
+  display:block;
+  background: url("images/github_icon.png");
+  background-size: cover;
+}
+
+.footer_container {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.footer_text {
+  position: absolute;
+  /* color: rgba(179, 179, 179, 0.89); */
+  color: white;
+  font-family: "Lato", sans-serif;
+  bottom: 0;
+  font-size: 0.9em;
+  padding: 10px;
+  right: 2vw;
+  text-align: center;
+  /* left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%) */
+}
+
+/* navbar animation */
+.nav_animation {
+  -webkit-animation: navbar_animation 500ms ease;
+  -moz-animation: navbar_animation 500ms ease;
+  animation: navbar_animation 500ms ease;
+}
+
+.react_unhovered {
+  color: rgba(255, 255, 255, 0.897);
+  /* font-weight: bold; */
+}
+
+.react_unhovered:hover {
+  color: transparent;
+  background-size: 600% 600%;
+  background-image: repeating-linear-gradient(-45deg, 
+  rgb(231, 109, 60), 
+  rgb(35, 213, 115), 
+  rgb(105, 245, 238),
+  rgb(63, 120, 243),
+  rgb(147, 29, 243),
+  rgb(238, 49, 255),
+  rgb(248, 25, 81),
+  rgb(231,48,48));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-animation: navbar_animation 12s ease infinite;
+  -moz-animation: navbar_animation 12s ease infinite;
+  animation: navbar_animation 12s ease infinite;
+}
+
+.react_unhovered:focus {
+  text-decoration: underline;
+}
+
+@-webkit-keyframes navbar_animation {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes navbar_animation {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes navbar_animation {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
