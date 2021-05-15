@@ -84,7 +84,7 @@ class NavbarElement extends React.Component {
         const { isVisible } = this.state;
         return (
             <motion.div
-                class="navbar"
+                className="navbar"
                 animate={isVisible ? 'visible' : 'hidden'}
                 variants={navbar_variants}
             >

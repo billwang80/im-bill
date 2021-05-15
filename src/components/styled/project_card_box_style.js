@@ -1,4 +1,4 @@
-import '../style.css';
+import '../../style.css';
 import styled from 'styled-components';
 
 // styling for the cards

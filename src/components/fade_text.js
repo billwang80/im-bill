@@ -43,7 +43,7 @@ class FadeText extends React.Component {
                 className={class_name}
                 animate={isVisible ? 'visible' : 'hidden'}
                 variants={text_variants}
-                transition={{ duration: 400 }}
+                transition={{ duration: 0.5 }}
             >
                 <h2>{text}</h2>
             </motion.div>

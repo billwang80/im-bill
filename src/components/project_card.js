@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style.css';
-import ProjectImage from '../styled/project_image_style.js';
-import ProjectCardBox from '../styled/project_card_box_style.js';
+import ProjectImage from './styled/project_image_style.js';
+import ProjectCardBox from './styled/project_card_box_style.js';
 
 const titleList = [
     "Shop With Me",
@@ -55,9 +55,9 @@ class ProjectCard extends React.Component {
             <ProjectCardBox image = { this.props.image }/*onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover} onMouseUp={this.toggleHover}*/ onMouseDown={this.toggleHover}>
                 {this.state.isHovered ? 
                     <div>
-                        <div class="project_title">{ titleList[ this.props.title - 1] }</div>
-                        <p class="project_tools">{ toolsList[ this.props.tools - 1] }</p>
-                        <p class="description_p">{ descriptionList[ this.props.description - 1] }</p> 
+                        <div class="project_title">{ titleList[ this.props.title] }</div>
+                        <p class="project_tools">{ toolsList[ this.props.tools] }</p>
+                        <p class="description_p">{ descriptionList[ this.props.description] }</p> 
                     </div>
                     :
                     <ProjectImage image = { this.props.image }> </ProjectImage> 
@@ -68,17 +68,18 @@ class ProjectCard extends React.Component {
     }
 }
 
-const keys = [1, 2, 3, 4];
-const listItems = keys.map((key) =>
+const keys = [0,1,2,3];
+const listItems = keys.map((key) => {
+    return (
+        <ProjectCard 
+            image = { key } 
+            title = { key }
+            tools = { key }
+            description = { key }
+        />
+    )
 
-    <ProjectCard 
-        image = { key } 
-        title = { key }
-        tools = { key }
-        description = { key }
-    />
-
-);
+});
 
 class ProjectContainer extends React.Component {
     render() {
