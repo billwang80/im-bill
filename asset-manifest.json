@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/im-bill/static/css/main.8340048b.chunk.css",
+    "main.js": "/im-bill/static/js/main.971c16e8.chunk.js",
+    "main.js.map": "/im-bill/static/js/main.971c16e8.chunk.js.map",
+    "runtime-main.js": "/im-bill/static/js/runtime-main.bde53947.js",
+    "runtime-main.js.map": "/im-bill/static/js/runtime-main.bde53947.js.map",
+    "static/js/2.1228731e.chunk.js": "/im-bill/static/js/2.1228731e.chunk.js",
+    "static/js/2.1228731e.chunk.js.map": "/im-bill/static/js/2.1228731e.chunk.js.map",
+    "index.html": "/im-bill/index.html",
+    "static/css/main.8340048b.chunk.css.map": "/im-bill/static/css/main.8340048b.chunk.css.map",
+    "static/js/2.1228731e.chunk.js.LICENSE.txt": "/im-bill/static/js/2.1228731e.chunk.js.LICENSE.txt",
+    "static/media/biomechatronics.jpg": "/im-bill/static/media/biomechatronics.9bae80ed.jpg",
+    "static/media/da_vinci.jpg": "/im-bill/static/media/da_vinci.a78f2696.jpg",
+    "static/media/e-wall.jpg": "/im-bill/static/media/e-wall.fdb9e04c.jpg",
+    "static/media/education_game.png": "/im-bill/static/media/education_game.7f6ac360.png",
+    "static/media/email_icon_hover1.png": "/im-bill/static/media/email_icon_hover1.23510244.png",
+    "static/media/feed_me.png": "/im-bill/static/media/feed_me.f0c103a4.png",
+    "static/media/header2.jpg": "/im-bill/static/media/header2.5ba308e8.jpg",
+    "static/media/style.css": "/im-bill/static/media/header_colour.90078c97.JPG",
+    "static/media/linkedin_icon_hover.png": "/im-bill/static/media/linkedin_icon_hover.16081481.png",
+    "static/media/peakview.png": "/im-bill/static/media/peakview.b1b54bfc.png",
+    "static/media/placeholder.jpg": "/im-bill/static/media/placeholder.1eef7193.jpg",
+    "static/media/placeholder1.jpg": "/im-bill/static/media/placeholder1.3e638a02.jpg",
+    "static/media/resume_icon_hover1.png": "/im-bill/static/media/resume_icon_hover1.ccd8e586.png",
+    "static/media/valineups.png": "/im-bill/static/media/valineups.a30c874d.png",
+    "static/media/watercolor0.jpg": "/im-bill/static/media/watercolor0.f1068b99.jpg",
+    "static/media/watercolor1.png": "/im-bill/static/media/watercolor1.b435ef1e.png",
+    "static/media/watercolor2.jpg": "/im-bill/static/media/watercolor2.bd6ab3eb.jpg",
+    "static/media/watercolor3.jpg": "/im-bill/static/media/watercolor3.49790cb5.jpg",
+    "static/media/watercolor4.jpg": "/im-bill/static/media/watercolor4.9c3a1e2d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bde53947.js",
+    "static/js/2.1228731e.chunk.js",
+    "static/css/main.8340048b.chunk.css",
+    "static/js/main.971c16e8.chunk.js"
+  ]
+}
