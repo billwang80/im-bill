@@ -32,7 +32,7 @@ main h1 {
   color: #111;
   text-align: center;
   font-size: 2em;
-  margin: 196px 128px 96px 128px;
+  margin: 12% 0% 5%;
 }
 
 .text_section {
@@ -161,23 +161,26 @@ main h1 {
 .project_title{
   color: #111;
   font-size: 1.8em;
-  margin: 10vh 10vw 2vh 10vw;
+  /* margin: 10vh 10vw 2vh 10vw; */
+  margin: 12% 0% 2%;
+  text-align:center;
   letter-spacing: 2px;
 }
 
 .project_tools{
   color: darkgrey;
-  margin: 0vh 10vw 3vh 10vw;
   font-size: 0.9em;
+  margin: 0 0 8%;
+  text-align: center;
   word-spacing: 1vw;
 }
 
 .description_p{
-  margin: 2vh 10vw;
-  display: block;
   font-size: 1.1em;
+  margin: 5% 10%;
+  display: block;
   text-align: justify;
-  text-justify: auto;
+  /* text-align-last: center; */
 }
 
 #about{

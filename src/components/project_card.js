@@ -4,34 +4,43 @@ import ProjectImage from './styled/project_image_style.js';
 import ProjectCardBox from './styled/project_card_box_style.js';
 
 const titleList = [
+    "Valineups",
+    "Feed Me",
+    "Peakview",
     "Shop With Me",
-    "Rate Alerts",
     "E-Wall",
-    "Azure"
+    "University"
 ]
 const toolsList = [
+    "Django React SQLite",
+    "VueJS ExpressJS",
+    "Django PostgreSQL",
     "Python Flask Firebase",
-    "Java Restful Android",
-    "RobotC EV3",
-    "Java Greenfoot Photoshop"
+    "C RobotC EV3",
+    "Java Greenfoot Adobe"
 ]
 const descriptionList = [
-    "Hack the North web app created using TD Da Vinci API to help you "
-    + "find shopping buddies based on your transaction history. Finally, "
-    + "you won't have to be sad and alone when buying Pokémon cards! "
-    + "Now you'll just be sad!",
+    `App to help Valorant players perform difficult lineups. Filters lineups
+    by agents, map and location. Mobile app coming soon.`,
 
-    "XE Rate Alerts will monitor your custom currency pairs. The midmarket rate is changing "
-    + "all the time so once your target rate is hit, "
-    + "you'll receive a notification so you won't miss out!",
+    `Never be hungry again with Feed Me, an app which finds restaurants 
+    or recipes based on your desired cuisine style or available ingredients.`,
 
-    "E-Wall is an eco-friendly proof of concept robot that collects and relocates "
-    + "waste. The robot locates and sorts litter using ultrasonic sensors, placing it "
-    + "in neat rows.",
+    `Want to share your experiences with the world? Or read about the philosophies
+    and cultures of others? Peakview is a blogging app that lets you share 
+    about anything and everything.`,
 
-    "Cute animated sprites designed for a puzzle game that teaches students "
-    + "how to code. The player guides the hero using basic concepts such as "
-    + "functions and iteration. Used by over 1000 students during the Hour of Code."
+    `Web App created during Hack the North to help you 
+    find shopping buddies based on your TD transaction history. Finally, 
+    you won't have buy skateboards by yourself anymore.`,
+
+    `E-Wall is an eco-friendly proof of concept robot that collects and relocates 
+    waste. The robot locates and sorts litter using ultrasonic sensors, placing it 
+    in neat rows. We hope he'll fall in love one day.`,
+
+    `Animated puzzle game designed to teach students 
+    how to code. The player guides the hero using basic concepts like 
+    functions and iteration. Used by over 1000 students during the Hour of Code.`
 ]
 
 class ProjectCard extends React.Component {
@@ -51,29 +60,26 @@ class ProjectCard extends React.Component {
 
     render() {
         return (
-            <ProjectCardBox image = { this.props.image } onMouseDown={this.toggleHover}>
+            <ProjectCardBox image = { this.props.index } onMouseDown={this.toggleHover}>
                 {this.state.isHovered ? 
                     <div>
-                        <div class="project_title">{ titleList[ this.props.title] }</div>
-                        <p class="project_tools">{ toolsList[ this.props.tools] }</p>
-                        <p class="description_p">{ descriptionList[ this.props.description] }</p> 
+                        <div class="project_title">{ titleList[ this.props.index ] }</div>
+                        <p class="project_tools">{ toolsList[ this.props.index ] }</p>
+                        <p class="description_p">{ descriptionList[ this.props.index ] }</p> 
                     </div>
                     :
-                    <ProjectImage image = { this.props.image }> </ProjectImage> 
+                    <ProjectImage image = { this.props.index }> </ProjectImage> 
                 }
             </ProjectCardBox>
         );
     }
 }
 
-const keys = [0,1,2,3];
+const keys = [0,1,2,3,4,5];
 const listItems = keys.map((key) => {
     return (
         <ProjectCard 
-            image = { key } 
-            title = { key }
-            tools = { key }
-            description = { key }
+            index = { key }
         />
     )
 

@@ -23,10 +23,12 @@ const ProjectImage = styled.div`
     background-size: cover;
     background-position: center;
     background-image: ${props => {
-        if (props.image === 0) return 'url(' + images['da_vinci.jpg'].default + ')'
-        if (props.image === 1) return 'url(' + images['xe_rate_alert.png'].default + ')'
-        if (props.image === 2) return 'url(' + images['e-wall.jpg'].default + ')'
-        if (props.image === 3) return 'url(' + images['education_game.png'].default + ')'
+        if (props.image === 0) return 'url(' + images['valineups.png'].default + ')'
+        if (props.image === 1) return 'url(' + images['feed_me.png'].default + ')'
+        if (props.image === 2) return 'url(' + images['peakview.png'].default + ')'
+        if (props.image === 3) return 'url(' + images['da_vinci.jpg'].default + ')'
+        if (props.image === 4) return 'url(' + images['e-wall.jpg'].default + ')'
+        if (props.image === 5) return 'url(' + images['education_game.png'].default + ')'
     }};
 `
 
