@@ -42,6 +42,14 @@ const descriptionList = [
     how to code. The player guides the hero using basic concepts like 
     functions and iteration. Used by over 1000 students during the Hour of Code.`
 ]
+const urlList = [
+    'https://github.com/jesseren/valineups',
+    'https://devpost.com/software/feed-me-nji26q',
+    'https://github.com/billwang80/peakview',
+    '',
+    'https://github.com/billwang80/Wall-E',
+    ''
+]
 
 class ProjectCard extends React.Component {
     constructor() {
@@ -58,14 +66,19 @@ class ProjectCard extends React.Component {
         }));
     }
 
+    handleUrl = (e) => {
+        e.stopPropagation();
+    };
+
     render() {
         return (
-            <ProjectCardBox image = { this.props.index } onMouseDown={this.toggleHover}>
+            <ProjectCardBox image = { this.props.index } onClick={this.toggleHover}>
                 {this.state.isHovered ? 
                     <div>
                         <div class="project_title">{ titleList[ this.props.index ] }</div>
                         <p class="project_tools">{ toolsList[ this.props.index ] }</p>
                         <p class="description_p">{ descriptionList[ this.props.index ] }</p> 
+                        <a class="project_url" onClick={this.handleUrl} href={ urlList[ this.props.index ] } target="_blank">{ urlList[ this.props.index ] }</a>
                     </div>
                     :
                     <ProjectImage image = { this.props.index }> </ProjectImage> 

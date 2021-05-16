@@ -32,7 +32,7 @@ main h1 {
   color: #111;
   text-align: center;
   font-size: 2em;
-  margin: 12% 0% 5%;
+  margin: 8% 0% 5%;
 }
 
 .text_section {
@@ -173,6 +173,21 @@ main h1 {
   margin: 0 0 8%;
   text-align: center;
   word-spacing: 1vw;
+}
+
+.project_url{
+  color: #777;
+  font-size: 0.9em;
+  text-decoration: none;
+  text-align: left;
+  display: block;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+
+.project_url:hover{
+  color: rgb(2, 206, 206);
 }
 
 .description_p{
