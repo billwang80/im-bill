@@ -51,8 +51,7 @@ class ProjectCard extends React.Component {
 
     render() {
         return (
-            // <ProjectCardBox image={this.props.image} description={this.props.description}>
-            <ProjectCardBox image = { this.props.image }/*onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover} onMouseUp={this.toggleHover}*/ onMouseDown={this.toggleHover}>
+            <ProjectCardBox image = { this.props.image } onMouseDown={this.toggleHover}>
                 {this.state.isHovered ? 
                     <div>
                         <div class="project_title">{ titleList[ this.props.title] }</div>
@@ -63,7 +62,6 @@ class ProjectCard extends React.Component {
                     <ProjectImage image = { this.props.image }> </ProjectImage> 
                 }
             </ProjectCardBox>
-            //<p class="description_p">Hack the North web app created using TD Da Vinci API to help you find shopping buddies based on your transaction history.</p> 
         );
     }
 }
@@ -83,15 +81,8 @@ const listItems = keys.map((key) => {
 
 class ProjectContainer extends React.Component {
     render() {
-        return ( <ul class = "sectioning"> { listItems } </ul>
-            // <div class="sectioning">
-            //     <ProjectCard 
-            //         image = {this.state.image1}
-            //     />
-            //     <ProjectCard 
-            //         image = {this.state.image2}
-            //     />
-            // </div>
+        return ( 
+            <ul class = "projects_section"> { listItems } </ul>
         );
     }
 }

@@ -18,9 +18,10 @@ const ProjectImage = styled.div`
     position: absolute;
     float: left;
     height: 378px;
-    width: 540px;
-    background-size: cover;
+    width: 100%;
     border-radius: 10px;
+    background-size: cover;
+    background-position: center;
     background-image: ${props => {
         if (props.image === 0) return 'url(' + images['da_vinci.jpg'].default + ')'
         if (props.image === 1) return 'url(' + images['xe_rate_alert.png'].default + ')'
