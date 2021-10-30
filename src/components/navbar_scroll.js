@@ -1,7 +1,6 @@
 import React from 'react';
 import '../style.css';
 import { motion } from 'framer-motion';
-//import cloneDeep from 'lodash';
 
 const navbar_variants = {
     hidden: {
